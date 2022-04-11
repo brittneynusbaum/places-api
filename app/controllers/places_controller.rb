@@ -13,5 +13,10 @@ class PlacesController < ApplicationController
     place.save
     render json: place.as_json
   end
+
+  def show
+    place = Place.find(params[:id])
+    render json: place.as_json
+  end
   
 end

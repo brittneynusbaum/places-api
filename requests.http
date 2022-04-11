@@ -1,7 +1,7 @@
 ### index places
 GET http://localhost:3000/places
 
-### index places
+### create place
 POST http://localhost:3000/places
 content-type: application/json
 
@@ -9,3 +9,6 @@ content-type: application/json
   "name": "Astoria Bookshop",
   "address": "31-29 31st St, Astoria, NY 11106"
 }
+
+### show place
+GET http://localhost:3000/places/2
